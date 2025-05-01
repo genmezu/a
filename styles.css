@@ -1,0 +1,56 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: none;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.result {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    white-space: pre-wrap;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.result.animated {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.copy-success {
+    animation: fadeOut 1s ease-in forwards;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
